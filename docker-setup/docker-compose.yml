@@ -1,0 +1,35 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    ports:
+      - "5678:5678"   # change to "5679:5678" if port 5678 is already in use
+    depends_on:
+      - pyproc
+    networks:
+      - flow
+    environment:
+      - GENERIC_TIMEZONE=America/Edmonton
+      - N8N_BASIC_AUTH_ACTIVE=false
+      # Uncomment below if you want password protection
+      # - N8N_BASIC_AUTH_ACTIVE=true
+      # - N8N_BASIC_AUTH_USER=omar
+      # - N8N_BASIC_AUTH_PASSWORD=yourpassword
+    volumes:
+      - C:/n8n_data/.n8n:/home/node/.n8n   # Mount old workflows & credentials
+
+  pyproc:
+    build: ../dataProc                # path relative to this compose file
+    container_name: pyproc
+    networks:
+      - flow
+    # Expose for local testing or docs
+    ports:
+      - "8000:8000"
+    # Persist API data (inputs/outputs) to host for inspection
+    volumes:
+      - ./pyproc-data:/app/data
+
+networks:
+  flow:
+    driver: bridge
