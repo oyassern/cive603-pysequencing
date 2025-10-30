@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes.clean import router as clean_router
+from routes.duration import router as duration_router
 
 app = FastAPI(title="Data Processor", version="1.0.0")
 
@@ -11,3 +12,4 @@ def health():
 
 # Mount versioned routers
 app.include_router(clean_router)
+app.include_router(duration_router)
