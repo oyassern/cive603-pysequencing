@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional, Tuple
+﻿from typing import Any, Dict, List, Optional, Tuple
 import json
 import os
 import re
@@ -29,7 +29,7 @@ def _extract_activity_type(name: Optional[str]) -> str:
     # Civil Works explicit token
     if re.search(r"(^|_)civil[_ ]works($|_)", s_norm, flags=re.IGNORECASE):
         return "Civil Works"
-    # Fall back to Set_<...> → treat as Equipment
+    # Fall back to Set_<...> â†’ treat as Equipment
     m2 = re.search(r"_Set_([A-Za-z0-9_]+)", s_norm, flags=re.IGNORECASE)
     if m2:
         return "Equipment"
