@@ -1,0 +1,422 @@
+[
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A00_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A00_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Electrical",
+    "Predecessor": "CWA_ASU-1A01_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A01_-_Set_101-FV-2010-1",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Piping_Insulation",
+    "Predecessor": "CWA_ASU-1A01_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Electrical",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A02_-_Set_101-E162",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A02_-_Set_101-E162",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Piping_Insulation",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-1",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-1",
+    "Predecessor": "CWA_ASU-1A02_-_Install_UG_Conduit_",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-2",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-2",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-3",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-3",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P232",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P232",
+    "Predecessor": "CWA_ASU-1A02_-_Install_UG_Conduit_",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P232",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E162",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E162",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E163",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E163",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-K111",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-K111",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_251-P236-3_1.5MVA_XFMER",
+    "Predecessor": "CWA_ASU-1A02_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A03_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Electrical",
+    "Predecessor": "CWA_ASU-1A03_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A03_-_Set_101-C171_CHILLED_WATER_TOWER",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A03_-_Set_101-E182",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Piping_Insulation",
+    "Predecessor": "CWA_ASU-1A03_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-C171_CHILLED_WATER_TOWER",
+    "Predecessor": "CWA_ASU-1A03_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-C171_CHILLED_WATER_TOWER",
+    "Predecessor": "CWA_ASU-1A03_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A04_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Electrical",
+    "Predecessor": "CWA_ASU-1A04_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A04_-_Set_101-C211",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A04_-_Install_Concrete",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A04_-_Set_101-C211",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A04_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Piping_Insulation",
+    "Predecessor": "CWA_ASU-1A04_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A05_-_Install_UG_Conduit_",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Concrete",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Electrical",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Grout",
+    "Predecessor": "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Instrumentation",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Piping_Insulation",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piping",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C681_GOX_BUFFER_VESSEL",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C725_LIN_FBT_RELIEF_DUMP_TANK",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E621_LOX_AMBIENT_VAPORISER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E628_LOX_STORAGE_TANK_PBU",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E649_LOX_VAPORISER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E721_LIN_AMBIENT_VAPORISER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E728_LP_LIN_STORAGE_TANK_PBU",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E739_LIN_STORAGE_TANK_PBU",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E747A_HP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E747B_HP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E748_HP_GAN_TRIM_HEATER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E749_N2_STEAM_SPARGED_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754A_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754B_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754C_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754D_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754E_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754F_LP_LIN_AMBIENT_VAPORIZER",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-T732_LIN_MP_STORAGE_TANK",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-V891A_WEIGH_SCALE_SYSTEM",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-V891B_WEIGH_SCALE_SYSTEM",
+    "Predecessor": "CWA_ASU-1A05_-_Install_Piling",
+    "Rel": "FS",
+    "TaskType": "Construct"
+  }
+]

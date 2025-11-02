@@ -1,0 +1,29 @@
+*** Begin Patch
+*** Update File: dataProc/routes/clean.py
+@@
+-        # Dependency dictionary may be supplied under several keys
+-        dependencies = (
+-            body.get("dependencies")
+-            or body.get("dependency_rules")
+-            or body.get("dictionary")
+-            or body.get("dependencyRules")
+-        )
++        # Dependency dictionary may be supplied under several keys
++        dependencies = (
++            body.get("dependencies")
++            or body.get("dependency_rules")
++            or body.get("dictionary")
++            or body.get("dependencyRules")
++        )
++        # If not found at the root, scan inside the data array for a nested dictionary holder
++        if dependencies is None and isinstance(records, list):
++            for item in records:
++                if isinstance(item, dict):
++                    for k in ("dependencyRules", "DependencyRules", "dependencies", "dependency_rules", "dictionary"):
++                        cand = item.get(k)
++                        if isinstance(cand, dict):
++                            dependencies = cand
++                            break
++                if dependencies is not None:
++                    break
+*** End Patch

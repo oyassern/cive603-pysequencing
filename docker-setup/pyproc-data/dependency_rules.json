@@ -1,0 +1,139 @@
+{
+  "Pile Caps": [
+    "Piling"
+  ],
+  "Concrete Pile Caps": [
+    "CIP Piles"
+  ],
+  "Concrete": [
+    "UG Conduit",
+    "Piling",
+    "Pile Caps",
+    "Screw Piles",
+    "CIP Piles",
+    "Concrete Pile Caps"
+  ],
+  "Primary Steel": [
+    "Screw Piles",
+    "CIP Piles",
+    "Pile Caps",
+    "Piling",
+    "Concrete"
+  ],
+  "Misc Steel": [
+    "Primary Steel"
+  ],
+  "Fireproofing": [
+    "Primary Steel"
+  ],
+  "Concrete Suspended Slabs": [
+    "Primary Steel"
+  ],
+  "Purlin_Girts": [
+    "Primary Steel"
+  ],
+  "Cladding": [
+    "Purlin_Girts"
+  ],
+  "Roofing": [
+    "Purlin_Girts"
+  ],
+  "Architectural": [
+    "Roofing"
+  ],
+  "Masonry": [
+    "Concrete",
+    "Primary Steel"
+  ],
+  "Module": [
+    "Pile Caps",
+    "CIP Piles",
+    "Concrete Pile Caps",
+    "Concrete",
+    "Primary Steel",
+    "Piling"
+  ],
+  "MCC": [
+    "Concrete Pile Caps",
+    "Primary Steel",
+    "Concrete",
+    "CIP Piles",
+    "Pile Caps",
+    "Piling",
+    "UG Conduit"
+  ],
+  "Switchgear": [
+    "Piling",
+    "Pile Caps",
+    "CIP Piles",
+    "Concrete Pile Caps",
+    "Primary Steel",
+    "Concrete",
+    "UG Conduit"
+  ],
+  "Transformer": [
+    "Pile Caps",
+    "CIP Piles",
+    "Concrete Pile Caps",
+    "Concrete",
+    "UG Conduit",
+    "Piling"
+  ],
+  "Substation": [
+    "Pile Caps",
+    "Primary Steel",
+    "UG Conduit",
+    "Concrete",
+    "CIP Piles",
+    "Piling",
+    "Concrete Pile Caps"
+  ],
+  "Equipment": [
+    "Concrete",
+    "Primary Steel",
+    "Concrete Suspended Slabs",
+    "CIP Piles",
+    "Pile Caps",
+    "Piling",
+    "Concrete Pile Caps"
+  ],
+  "Equipment Insulation": [
+    "Equipment"
+  ],
+  "Busduct": [
+    "Concrete",
+    "Primary Steel"
+  ],
+  "Cable Tray": [
+    "Primary Steel"
+  ],
+  "Grout": [
+    "Primary Steel",
+    "Equipment",
+    "Concrete"
+  ],
+  "Pipe Support": [
+    "Concrete",
+    "Primary Steel"
+  ],
+  "Piping": [
+    "Pipe Support",
+    "Primary Steel"
+  ],
+  "Tracing": [
+    "Piping"
+  ],
+  "Piping Insulation": [
+    "Piping"
+  ],
+  "Electrical": [
+    "Piping"
+  ],
+  "Instrumentation": [
+    "Equipment",
+    "Piping"
+  ],
+  "Tubing": [
+    "Instrumentation"
+  ]
+}

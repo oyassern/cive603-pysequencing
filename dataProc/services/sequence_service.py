@@ -173,6 +173,14 @@ def _sequence_group(records: List[Dict[str, Any]], type_rules: Optional[Dict[str
         else:
             rule_list = default_rules.get(cur_type, [])
         # Evaluate each predecessor type exactly once; all checks must pass
+        # Special handling: ignore vertical rule for Equipment for now
+        if _norm_type(cur_type) == "equipment" and isinstance(rule_list, list):
+            new_rules: List[Dict[str, Any]] = []
+            for r in rule_list:
+                r2 = dict(r) if isinstance(r, dict) else {"type": r}
+                r2.pop("vert", None)
+                new_rules.append(r2)
+            rule_list = new_rules
         chosen_preds: List[str] = []
         for rule in rule_list:
             pred_type = rule.get("type")
@@ -266,6 +274,16 @@ def _build_activity_list_ordered(
             index_by_name[name] = idx
             rec_by_name[name] = rec
 
+    # Collect predecessors per successor (preserve discovery order, unique per successor)
+    preds_by_succ: Dict[str, List[str]] = {n: [] for n in index_by_name.keys()}
+    for e in edges:
+        cur = e.get("ScheduleActivityID")
+        pred = e.get("Predecessor")
+        if isinstance(cur, str) and isinstance(pred, str) and cur in preds_by_succ:
+            lst = preds_by_succ[cur]
+            if pred not in lst:
+                lst.append(pred)
+
     # Build graph from edges for topological order
     adj: Dict[str, List[str]] = {n: [] for n in index_by_name.keys()}
     indeg: Dict[str, int] = {n: 0 for n in index_by_name.keys()}
@@ -306,6 +324,7 @@ def _build_activity_list_ordered(
             "Duration": rec.get("Duration"),
             "CWA": rec.get("CWA"),
             "TaskType": "Construct",
+            "Predecessors": preds_by_succ.get(name, []),
         })
     return nodes
 
@@ -352,27 +371,37 @@ def run_sequence_job(data_dir: str) -> Dict[str, Any]:
     activities = _build_activity_list_ordered(duration_records, edges)
 
     ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-    # Write ordered activities as the sequence output
+    # Write ordered activities as the sequence output (single output artifact)
     out_latest = os.path.join(data_dir, "sequence_output_latest.json")
     out_stamp = os.path.join(archive_dir, f"sequence_output_{ts}.json")
     _write_json(out_latest, activities)
     _write_json(out_stamp, activities)
-    # Also persist edges separately for reference
-    edges_latest = os.path.join(data_dir, "sequence_edges_latest.json")
-    edges_stamp = os.path.join(archive_dir, f"sequence_edges_{ts}.json")
-    _write_json(edges_latest, edges)
-    _write_json(edges_stamp, edges)
 
-    return {
-        "edges": len(edges),
-        "result": activities,
-        "files": {
-            "source_duration": source_path,
-            "output_latest": out_latest,
-            "output_archive": out_stamp,
-            "edges_latest": edges_latest,
-            "edges_archive": edges_stamp,
-            "dependency_rules": os.path.join(data_dir, DEPENDENCY_FILENAME) if dependency_rules is not None else None,
-        },
-    }
+    # Generate audit log automatically (best‑effort; non-blocking on failure)
+    log_path = None
+    try:
+        import importlib, importlib.util
+        audit_func = None
+        try:
+            # Try package import first
+            from scripts.sequence_audit.audit_sequence import audit as audit_sequence  # type: ignore
+            audit_func = audit_sequence
+        except Exception:
+            # Fallback: load by file path relative to repo root
+            repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+            audit_file = os.path.join(repo_root, "scripts", "sequence_audit", "audit_sequence.py")
+            spec = importlib.util.spec_from_file_location("_audit_sequence_fallback", audit_file)
+            if spec and spec.loader:
+                mod = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(mod)  # type: ignore
+                audit_func = getattr(mod, "audit", None)
+        if audit_func is not None:
+            report = audit_func(data_dir)
+            log_path = os.path.join(data_dir, "log.md")
+            with open(log_path, "w", encoding="utf-8") as f:
+                f.write(report)
+    except Exception:
+        log_path = None
+
+    return {"result": activities}
 DEPENDENCY_FILENAME = "dependency_rules.json"

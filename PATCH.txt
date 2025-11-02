@@ -1,0 +1,25 @@
+*** Begin Patch
+*** Update File: dataProc/services/duration_service.py
+@@
+-    # After durations, run sequencing to produce edges
+-    try:
+-        # Local import to avoid cycles
+-        from services.sequence_service import run_sequence_job
+-        seq_result = run_sequence_job(data_dir=data_dir)
+-    except Exception as _e:
+-        seq_result = {"error": str(_e)}
+-
+     return {
+         "rows": len(enriched),
+         "result": enriched,
+-        "sequence": seq_result.get("result") if isinstance(seq_result, dict) else None,
+-        "dependencies": seq_result.get("dependencies") if isinstance(seq_result, dict) else None,
+         "files": {
+             "source_clean": source_path,
+             "output_latest": out_latest,
+             "output_archive": out_stamp,
+-            "sequence_latest": seq_result.get("files", {}).get("output_latest") if isinstance(seq_result, dict) else None,
+-            "dependency_rules": seq_result.get("files", {}).get("dependency_rules") if isinstance(seq_result, dict) else os.path.join(data_dir, "dependency_rules.json"),
+         },
+     }
+*** End Patch
