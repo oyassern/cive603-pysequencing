@@ -1,144 +1,60 @@
 {
-  "dependencyRules": {
-    "Pile Caps": [
-      "Piling"
-    ],
-    "Concrete Pile Caps": [
-      "CIP Piles"
-    ],
-    "Concrete": [
-      "UG Conduit",
-      "Piling",
-      "Pile Caps",
-      "Screw Piles",
-      "CIP Piles",
-      "Concrete Pile Caps"
-    ],
-    "Primary Steel": [
-      "Screw Piles",
-      "CIP Piles",
-      "Pile Caps",
-      "Piling",
-      "Concrete"
-    ],
-    "Misc Steel": [
-      "Primary Steel"
-    ],
-    "Fireproofing": [
-      "Primary Steel"
-    ],
-    "Concrete Suspended Slabs": [
-      "Primary Steel"
-    ],
-    "Purlin_Girts": [
-      "Primary Steel"
-    ],
-    "Cladding": [
-      "Purlin_Girts"
-    ],
-    "Roofing": [
-      "Purlin_Girts"
-    ],
-    "Architectural": [
-      "Roofing"
-    ],
-    "Masonry": [
-      "Concrete",
-      "Primary Steel"
-    ],
-    "Module": [
-      "Pile Caps",
-      "CIP Piles",
-      "Concrete Pile Caps",
-      "Concrete",
-      "Primary Steel",
-      "Piling"
-    ],
-    "MCC": [
-      "Concrete Pile Caps",
-      "Primary Steel",
-      "Concrete",
-      "CIP Piles",
-      "Pile Caps",
-      "Piling",
-      "UG Conduit"
-    ],
-    "Switchgear": [
-      "Piling",
-      "Pile Caps",
-      "CIP Piles",
-      "Concrete Pile Caps",
-      "Primary Steel",
-      "Concrete",
-      "UG Conduit"
-    ],
-    "Transformer": [
-      "Pile Caps",
-      "CIP Piles",
-      "Concrete Pile Caps",
-      "Concrete",
-      "UG Conduit",
-      "Piling"
-    ],
-    "Substation": [
-      "Pile Caps",
-      "Primary Steel",
-      "UG Conduit",
-      "Concrete",
-      "CIP Piles",
-      "Piling",
-      "Concrete Pile Caps"
-    ],
-    "Equipment": [
-      "Concrete",
-      "Primary Steel",
-      "Concrete Suspended Slabs",
-      "CIP Piles",
-      "Pile Caps",
-      "Piling",
-      "Concrete Pile Caps"
-    ],
-    "Equipment Insulation": [
-      "Equipment"
-    ],
-    "Busduct": [
-      "Concrete",
-      "Primary Steel"
-    ],
-    "Cable Tray": [
-      "Primary Steel"
-    ],
-    "Grout": [
-      "Primary Steel",
-      "Equipment",
-      "Concrete"
-    ],
-    "Pipe Support": [
-      "Concrete",
-      "Primary Steel"
-    ],
-    "Piping": [
-      "Pipe Support",
-      "Primary Steel"
-    ],
-    "Tracing": [
-      "Piping"
-    ],
-    "Piping Insulation": [
-      "Piping"
-    ],
-    "Electrical": [
-      "Piping"
-    ],
-    "Instrumentation": [
-      "Equipment",
-      "Piping"
-    ],
-    "Tubing": [
-      "Instrumentation"
-    ]
-  }
-}     "Entity Handle.Value": "222",
+  "data": [
+    {
+      "Element Name": "SchedActIDBoxes.dwg",
+      "Category/Class": "File",
+      "GUID": "c9787861-282f-9d40-9a4b-138f691af6bb",
+      "X Coordinate": 124.85991062744141,
+      "Y Coordinate": 291.5482509811401,
+      "Z Coordinate": 21.913099835205074,
+      "Identity.Fingerprint": "c9787861-282f-9d40-9a4b-138f691af6bb",
+      "Identity.Fingerprint (2)": "c9787861-282f-9d40-9a4b-138f691af6bb",
+      "Identity.Version": "cbb76c1f-b8cb-854b-b5a5-50b73c80e3b8",
+      "Identity.Version (2)": "cbb76c1f-b8cb-854b-b5a5-50b73c80e3b8",
+      "Item.Creator": "LcNwcLoaderPlugin:lclddwg",
+      "Item.Creator (2)": "LcNwcLoaderPlugin:lclddwg",
+      "Item.GUID": "c9787861-282f-9d40-9a4b-138f691af6bb",
+      "Item.GUID (2)": "c9787861-282f-9d40-9a4b-138f691af6bb",
+      "Item.Hidden": "False",
+      "Item.Icon": "File",
+      "Item.Internal Type": "LcOaPartition",
+      "Item.Internal Type (2)": "LcOaPartition",
+      "Item.Material": "AutoCAD Color Index 7",
+      "Item.Material (2)": "AutoCAD Color Index 7",
+      "Item.Name": "SchedActIDBoxes.dwg",
+      "Item.Name (2)": "SchedActIDBoxes.dwg",
+      "Item.Required": "False",
+      "Item.Source File Name": "C:\\ProjectFiles\\Air Products MEI1\\Dec 5 2024\\SchedActIDBoxes.dwg",
+      "Item.Source File Name (2)": "C:\\ProjectFiles\\Air Products MEI1\\Dec 5 2024\\SchedActIDBoxes.dwg",
+      "Item.Type": "File",
+      "Item.Type (2)": "File",
+      "Material.Ambient.Blue": "1",
+      "Material.Ambient.Green": "1",
+      "Material.Ambient.Red": "1",
+      "Material.Diffuse.Blue": "1",
+      "Material.Diffuse.Green": "1",
+      "Material.Diffuse.Red": "1",
+      "Material.Emissive.Blue": "0",
+      "Material.Emissive.Green": "0",
+      "Material.Emissive.Red": "0",
+      "Material.Name": "AutoCAD Color Index 7",
+      "Material.Name (2)": "AutoCAD Color Index 7",
+      "Material.Shininess": "9.99999974737875E-06",
+      "Material.Specular.Blue": "0",
+      "Material.Specular.Green": "0",
+      "Material.Specular.Red": "0",
+      "Material.Transparency": "0",
+      "Summary.Last saved by": "RHHermann",
+      "Summary.Last saved by (2)": "RHHermann"
+    },
+    {
+      "Element Name": "CWA_ASU-1A00_-_Install_Concrete",
+      "Category/Class": "Layer",
+      "GUID": "3baf0c1f-e48e-5e0c-9e27-3db0ce17ef54",
+      "X Coordinate": 125.513385,
+      "Y Coordinate": 278.693875,
+      "Z Coordinate": -2.0937349999999997,
+      "Entity Handle.Value": "222",
       "Entity Handle.Value (2)": "222",
       "General.Color": "253",
       "General.Color (2)": "253",

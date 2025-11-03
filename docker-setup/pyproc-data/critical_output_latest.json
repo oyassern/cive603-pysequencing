@@ -1,0 +1,2314 @@
+[
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 2.0,
+    "CWA": "1A00",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 2.0,
+    "LF": 2.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Concrete",
+    "Type": "Concrete",
+    "Duration": 4.0,
+    "CWA": "1A00",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A00_-_Install_Piling"
+    ],
+    "ES": 2.0,
+    "EF": 6.0,
+    "LF": 6.0,
+    "LS": 2.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Grout",
+    "Type": "Grout",
+    "Duration": 1.0,
+    "CWA": "1A00",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A00_-_Install_Concrete"
+    ],
+    "ES": 6.0,
+    "EF": 7.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 16.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A00_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 6.0,
+    "CWA": "1A00",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Cable_Tray",
+    "Type": "Cable Tray",
+    "Duration": 6.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 3.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 3.0,
+    "LF": 3.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Piping",
+    "Type": "Piping",
+    "Duration": 10.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 10.0,
+    "LF": 10.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Electrical",
+    "Type": "Electrical",
+    "Duration": 13.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A01_-_Install_Piping"
+    ],
+    "ES": 10.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 10.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 6.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A01_-_Install_Piping"
+    ],
+    "ES": 10.0,
+    "EF": 16.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 7.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_UG_Conduit_",
+    "Type": "UG Conduit",
+    "Duration": 5.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 5.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 18.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Set_101-FV-2010-1",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A01_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 3.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Install_Instrumentation",
+    "Type": "Instrumentation",
+    "Duration": 6.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A01_-_Set_101-FV-2010-1"
+    ],
+    "ES": 4.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Set_101-FV-2063",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A01_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 4.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 19.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Set_101-PV-2100",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 1.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 22.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Set_101-V207",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 1.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 22.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A01_-_Set_101-V208",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A01",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 1.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 22.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Cable_Tray",
+    "Type": "Cable Tray",
+    "Duration": 5.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 5.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 18.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Formwork_for_101-K111_Compressor_Pad",
+    "Type": "Formwork",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Formwork_for_101-K131_Compressor_Pad",
+    "Type": "Formwork",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Formwork_for_101-P292_ASU_PDC_BUILDING_Slab",
+    "Type": "Formwork",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Formwork_for_101-P297_LCI_ASU_LCI_BUILDING_Slab",
+    "Type": "Formwork",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Formwork_for_OVER_HEAD_CRANE_Beams",
+    "Type": "Formwork",
+    "Duration": 5.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 9.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 14.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Concrete",
+    "Type": "Concrete",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 7.0,
+    "LF": 7.0,
+    "LS": 4.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Piping",
+    "Type": "Piping",
+    "Duration": 6.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 6.0,
+    "LF": 6.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Electrical",
+    "Type": "Electrical",
+    "Duration": 8.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piping"
+    ],
+    "ES": 6.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Piping"
+    ],
+    "ES": 6.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-2",
+    "Type": "Transformer",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-3",
+    "Type": "Transformer",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_UG_Conduit_",
+    "Type": "UG Conduit",
+    "Duration": 7.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 7.0,
+    "LF": 7.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P132-1",
+    "Type": "Transformer",
+    "Duration": 6.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_UG_Conduit_"
+    ],
+    "ES": 7.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Transformer_-_VM-ASU-P232",
+    "Type": "Transformer",
+    "Duration": 2.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_UG_Conduit_",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 9.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 14.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E162",
+    "Type": "Equipment",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 11.0,
+    "LF": 11.0,
+    "LS": 7.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Grout",
+    "Type": "Grout",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Set_101-E162"
+    ],
+    "ES": 11.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Install_Instrumentation",
+    "Type": "Instrumentation",
+    "Duration": 6.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Set_101-E162",
+      "CWA_ASU-1A02_-_Install_Piping"
+    ],
+    "ES": 11.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-E163",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-G171A",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-G171B",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-K111",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 18.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 5.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-K131",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 18.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 5.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-P292_ASU_PDC_BUILDING",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 18.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 5.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-P297-LCI_ASU_LCI_BUILDING",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 18.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 5.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-V102_V104_MAC_INLET_FILTER_SILENCER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 12.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 11.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-V113",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-V133",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-V134",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_101-V135",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_251-P236-3_1.5MVA_XFMER",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete"
+    ],
+    "ES": 7.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_251-P416-3_AUTOLOAD_BUILDING",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 3.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 20.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_251-P614",
+    "Type": "Equipment",
+    "Duration": 9.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete"
+    ],
+    "ES": 7.0,
+    "EF": 16.0,
+    "LF": 23.0,
+    "LS": 14.0,
+    "Float": 7.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_D111-_MAC_MOTOR",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 12.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 11.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_D131-_BAC_MOTOR",
+    "Type": "Equipment",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_OVER_HEAD_CRANE",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 18.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 5.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_P222-1_MV_Switchgear",
+    "Type": "Equipment",
+    "Duration": 4.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_P222-2_MV_Switchgear",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_P412-1",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 9.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 14.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_P412E",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 9.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 14.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A02_-_Set_P422-2_LV_Switchgear",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A02",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A02_-_Install_Concrete",
+      "CWA_ASU-1A02_-_Install_Piling"
+    ],
+    "ES": 7.0,
+    "EF": 9.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 14.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Cable_Tray",
+    "Type": "Cable Tray",
+    "Duration": 2.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 2.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 21.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 3.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 3.0,
+    "LF": 3.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Formwork_for_101-C171_CHILLED_WATER_TOWER_Foundation",
+    "Type": "Formwork",
+    "Duration": 8.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Concrete",
+    "Type": "Concrete",
+    "Duration": 1.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 3.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Piping",
+    "Type": "Piping",
+    "Duration": 6.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 6.0,
+    "LF": 6.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Electrical",
+    "Type": "Electrical",
+    "Duration": 5.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piping"
+    ],
+    "ES": 6.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 4.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piping"
+    ],
+    "ES": 6.0,
+    "EF": 10.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 13.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-C171_CHILLED_WATER_TOWER",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Concrete",
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 15.0,
+    "LF": 15.0,
+    "LS": 4.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Grout",
+    "Type": "Grout",
+    "Duration": 1.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Set_101-C171_CHILLED_WATER_TOWER"
+    ],
+    "ES": 15.0,
+    "EF": 16.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 7.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-C182A_TSA_ADSORBER_VESSEL",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-C182B_TSA_ADSORBER_VESSEL",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-E182",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 6.0,
+    "LF": 6.0,
+    "LS": 3.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Install_Instrumentation",
+    "Type": "Instrumentation",
+    "Duration": 8.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Set_101-E182"
+    ],
+    "ES": 6.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-V184_DEPRESSURIZATION__VENT_SILENCER",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 4.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 19.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_101-V185_REACTIVATION_VENT_SILENCER",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 4.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 19.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_AHU-1_HVAC",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_AHU-2",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A03_-_Set_Equipment",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A03",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A03_-_Install_Piling"
+    ],
+    "ES": 3.0,
+    "EF": 5.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 18.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Cable_Tray",
+    "Type": "Cable Tray",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 3.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 20.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 4.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Formwork_for_101-C211_Foundation",
+    "Type": "Formwork",
+    "Duration": 7.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 16.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Formwork_for_101-C212_Foundation",
+    "Type": "Formwork",
+    "Duration": 7.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 16.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Concrete",
+    "Type": "Concrete",
+    "Duration": 1.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 5.0,
+    "LF": 5.0,
+    "LS": 4.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Piping",
+    "Type": "Piping",
+    "Duration": 4.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Electrical",
+    "Type": "Electrical",
+    "Duration": 4.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Piping"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Piping"
+    ],
+    "ES": 4.0,
+    "EF": 7.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 16.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-C211",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 16.0,
+    "LF": 16.0,
+    "LS": 5.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Grout",
+    "Type": "Grout",
+    "Duration": 1.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Set_101-C211",
+      "CWA_ASU-1A04_-_Install_Concrete"
+    ],
+    "ES": 16.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Install_Instrumentation",
+    "Type": "Instrumentation",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Set_101-C211",
+      "CWA_ASU-1A04_-_Install_Piping"
+    ],
+    "ES": 16.0,
+    "EF": 19.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 4.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-C212",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 16.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 7.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E201A",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E201B",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E201C",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E201D",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E217",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E2172",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 6.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 17.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E221",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 7.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 16.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E222",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 7.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 16.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E262",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 7.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 16.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A04_-_Set_101-E871",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A04",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A04_-_Install_Concrete",
+      "CWA_ASU-1A04_-_Install_Piling"
+    ],
+    "ES": 5.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Civil_Works",
+    "Type": "Civil Works",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 5.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 18.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Cable_Tray",
+    "Type": "Cable Tray",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 5.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 18.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Piling",
+    "Type": "Piling",
+    "Duration": 4.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 4.0,
+    "LF": 4.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Formwork_for_101-C681_GOX_BUFFER_VESSEL",
+    "Type": "Formwork",
+    "Duration": 7.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 11.0,
+    "LF": 23.0,
+    "LS": 16.0,
+    "Float": 12.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Formwork_for_101-E754A_to_E754F_Common_Slab",
+    "Type": "Formwork",
+    "Duration": 4.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 8.0,
+    "LF": 23.0,
+    "LS": 19.0,
+    "Float": 15.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Formwork_for_101-T621_LOX_FLAT_BOTTOM_STORAGE_TANK",
+    "Type": "Formwork",
+    "Duration": 8.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 12.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 11.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Formwork_for_101-T721_LIN_FLAT_BOTTOM_STORAGE_TANK",
+    "Type": "Formwork",
+    "Duration": 8.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 12.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 11.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Formwork_for_101-T732_LIN_MP_STORAGE_TANK",
+    "Type": "Formwork",
+    "Duration": 8.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 12.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 11.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Piping",
+    "Type": "Piping",
+    "Duration": 9.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 9.0,
+    "LF": 9.0,
+    "LS": 0.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Electrical",
+    "Type": "Electrical",
+    "Duration": 10.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piping"
+    ],
+    "ES": 9.0,
+    "EF": 19.0,
+    "LF": 23.0,
+    "LS": 13.0,
+    "Float": 4.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Piping_Insulation",
+    "Type": "Piping Insulation",
+    "Duration": 6.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Piping"
+    ],
+    "ES": 9.0,
+    "EF": 15.0,
+    "LF": 23.0,
+    "LS": 17.0,
+    "Float": 8.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_UG_Conduit_",
+    "Type": "UG Conduit",
+    "Duration": 2.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [],
+    "ES": 0.0,
+    "EF": 2.0,
+    "LF": 4.0,
+    "LS": 2.0,
+    "Float": 2.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Concrete",
+    "Type": "Concrete",
+    "Duration": 8.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_UG_Conduit_",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 4.0,
+    "EF": 12.0,
+    "LF": 12.0,
+    "LS": 4.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 14.0,
+    "LF": 14.0,
+    "LS": 12.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Grout",
+    "Type": "Grout",
+    "Duration": 3.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK"
+    ],
+    "ES": 14.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Install_Instrumentation",
+    "Type": "Instrumentation",
+    "Duration": 9.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Set_101-C625_LOX_FBT_RELIEF_DUMP_TANK",
+      "CWA_ASU-1A05_-_Install_Piping"
+    ],
+    "ES": 14.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 14.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C681_GOX_BUFFER_VESSEL",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-C725_LIN_FBT_RELIEF_DUMP_TANK",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 15.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 8.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E621_LOX_AMBIENT_VAPORISER",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E628_LOX_STORAGE_TANK_PBU",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 15.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 8.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E649_LOX_VAPORISER",
+    "Type": "Equipment",
+    "Duration": 7.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 19.0,
+    "LF": 23.0,
+    "LS": 16.0,
+    "Float": 4.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E721_LIN_AMBIENT_VAPORISER",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E728_LP_LIN_STORAGE_TANK_PBU",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 15.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 8.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E739_LIN_STORAGE_TANK_PBU",
+    "Type": "Equipment",
+    "Duration": 3.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 15.0,
+    "LF": 23.0,
+    "LS": 20.0,
+    "Float": 8.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E747A_HP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E747B_HP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E748_HP_GAN_TRIM_HEATER",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E749_N2_STEAM_SPARGED_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 8.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 20.0,
+    "LF": 23.0,
+    "LS": 15.0,
+    "Float": 3.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E753_LP_GAN_TRIM_HEATER",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754A_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754B_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754C_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754D_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754E_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-E754F_LP_LIN_AMBIENT_VAPORIZER",
+    "Type": "Equipment",
+    "Duration": 5.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 17.0,
+    "LF": 23.0,
+    "LS": 18.0,
+    "Float": 6.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-G741B",
+    "Type": "Equipment",
+    "Duration": 2.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 14.0,
+    "LF": 23.0,
+    "LS": 21.0,
+    "Float": 9.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-G991A_WASTE_WATER_LIFT_PUMP",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-G991B_WASTE_WATER_LIFT_PUMP",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-K661A_GOX_Booster_Compressor",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-K661B_GOX_Booster_Compressor",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-T621_LOX_FLAT_BOTTOM_STORAGE_TANK",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-T721_LIN_FLAT_BOTTOM_STORAGE_TANK",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-T732_LIN_MP_STORAGE_TANK",
+    "Type": "Equipment",
+    "Duration": 11.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 23.0,
+    "LF": 23.0,
+    "LS": 12.0,
+    "Float": 0.0,
+    "Critical": true
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-V891A_WEIGH_SCALE_SYSTEM",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  },
+  {
+    "ScheduleActivityID": "CWA_ASU-1A05_-_Set_101-V891B_WEIGH_SCALE_SYSTEM",
+    "Type": "Equipment",
+    "Duration": 1.0,
+    "CWA": "1A05",
+    "TaskType": "Construct",
+    "Predecessors": [
+      "CWA_ASU-1A05_-_Install_Concrete",
+      "CWA_ASU-1A05_-_Install_Piling"
+    ],
+    "ES": 12.0,
+    "EF": 13.0,
+    "LF": 23.0,
+    "LS": 22.0,
+    "Float": 10.0,
+    "Critical": false
+  }
+]
